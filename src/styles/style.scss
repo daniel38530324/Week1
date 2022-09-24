@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgb(0, 179, 185);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  box-shadow: 3px 1px 5px 4px #5e5e5e;
+  h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    list-style-type: none;
+    li {
+      padding: 0.5rem 1rem;
+      a {
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+  }
+}
+
+div.body {
+  main {
+    section.up {
+      position: relative;
+      // padding-top: 2rem;
+      img {
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+      }
+      h1.two {
+        position: absolute;
+        bottom: 82vh;
+        right: 15vw;
+        font-size: 3.5rem;
+        color: white;
+      }
+      a {
+        position: absolute;
+        bottom: 20vh;
+        right: 22vw;
+        font-size: 2rem;
+        text-decoration: none;
+        background-color: rgb(0, 179, 185);
+        color: rgb(0, 0, 0);
+        border-radius: 10%;
+        padding: 1rem 1.1rem;
+      }
+    }
+    section.down {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 5rem;
+      padding-top: 3rem;
+      div.left {
+        flex: 3 1 500px;
+        h1 {
+          padding-left: 3rem;
+          font-size: 2rem;
+        }
+        p {
+          padding: 2rem 3rem;
+        }
+      }
+      div.right {
+        flex: 1 1 200px;
+        img {
+          width: 20vw;
+          height: 60vh;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    h2 {
+      margin-left: 1rem;
+    }
+  }
+  div.body {
+    main {
+      section.up {
+        img {
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+        h1.two {
+          font-size: 1.2rem;
+          bottom: 23vh;
+          right: 5vw;
+        }
+        a {
+          font-size: 0.5rem;
+          bottom: 5vh;
+          right: 13vw;
+          padding: 0.5rem 0.6rem;
+        }
+      }
+
+      section.down {
+        padding-bottom: 0rem;
+        div.left {
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+        div.right {
+          img {
+            width: 60vw;
+            height: 50vh;
+            margin-left: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
