@@ -155,4 +155,72 @@ div.body main section.down div.right img {
     margin-left: 5rem;
   }
 }
+
+.sidenav {
+  width: 250px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  height: 100vh;
+  background-color: #0a1929;
+  padding-top: 28px;
+}
+
+.sidenavClosed {
+  composes: sidenav;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  background-color: #0a1929;
+  width: 60px;
+}
+
+.sideitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #b2bac2;
+  text-decoration: none;
+}
+
+.linkText {
+  padding-left: 16px;
+}
+
+.linkTextClosed {
+  composes: linkText;
+  visibility: hidden;
+}
+
+.sideitem:hover {
+  background-color: #244f7d1c;
+}
+
+.menuBtn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-end;
+  color: #b2bac2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+div.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p1 {
+  width: 30px;
+  height: 30px;
+}
 /*# sourceMappingURL=style.css.map */

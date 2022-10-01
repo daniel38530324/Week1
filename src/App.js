@@ -5,11 +5,13 @@ import Homepage from "./pages/Homepage";
 import Login from "./pages/Login";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import "./styles/style.css";
+import Sidenav from "./pages/Sidenav";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <Sidenav />
+      {/* <Nav /> */}
       <HashRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
